@@ -1,4 +1,4 @@
-PROBLEM SET #2: PLOTS
+PROBLEM SET #4: PLOTS
 
 Instructions:
 - Clone the Problem Set code package from GitHub:
