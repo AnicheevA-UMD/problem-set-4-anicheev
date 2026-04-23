@@ -30,7 +30,13 @@ def main():
 
     ##  PART 3: BAR PLOTS AND HISTOGRAMS  ##
     # 1
-
+    part3.plot_fta_barplot(pred_universe)
+    # 2
+    part3.plot_fta_barplot_by_sex(pred_universe)
+    # 3
+    part3.plot_age_histogram(pred_universe)
+    # 4
+    part3.plot_age_histogram_bins(pred_universe)
     # 2
 
     # 3
