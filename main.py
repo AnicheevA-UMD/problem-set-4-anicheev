@@ -16,7 +16,7 @@ def main():
     directories = ['data/part2_plots', 'data/part3_plots', 'data/part4_plots', 'data/part5_plots']
     part1.create_directories(directories)
     
-    pred_universe, arrest_events, charge_counts, charge_counts_by_offense = part1.extract_transform()
+    pred_universe, arrest_events, charge_counts, charge_counts_by_offense, felony_charge, pred_universe_felony = part1.extract_transform()
     
     ##  PART 2: PLOT EXAMPLES  ##
     # Apply plot theme
@@ -37,18 +37,14 @@ def main():
     part3.plot_age_histogram(pred_universe)
     # 4
     part3.plot_age_histogram_bins(pred_universe)
-    # 2
-
-    # 3
-
-    # 4
 
     ##  PART 4: CATEGORICAL PLOTS  ##
     # 1
-    
+    part4.plot_felony_prediction_by_charge(pred_universe_felony)
     # 2
-
+    part4.plot_nonfelony_prediction_by_charge(pred_universe_felony)
     # 3
+    part4.plot_felony_prediction_by_charge_hued(pred_universe_felony)
 
     ##  PART 5: SCATTERPLOTS  ##
     # 1
