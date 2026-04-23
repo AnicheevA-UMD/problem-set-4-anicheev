@@ -48,8 +48,9 @@ def main():
 
     ##  PART 5: SCATTERPLOTS  ##
     # 1
-    
+    part5.plot_scatter_by_felony_charge(pred_universe_felony)
     # 2
+    part5.plot_scatter_prediction_vs_actual(pred_universe_felony)
 
 
 if __name__ == "__main__":
